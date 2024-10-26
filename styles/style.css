@@ -171,6 +171,11 @@
 .card__image {
   width: 100%;
   outline: 2px solid var(--accent-color);
+  max-height: 696px;
+}
+
+.filter-dark-green {
+  filter: brightness(30%);
 }
 
 .image__label {
@@ -186,6 +191,39 @@
   0px 1px var(--label-border-color),
   1px 0px var(--label-border-color),
   0px -1px var(--label-border-color);
+  z-index: 1;
+}
+
+.filter-dark-green {
+  filter: brightness(30%);
+}
+
+.filter-clear-paper {
+  filter: contrast(140%);
+}
+
+.filter-success {
+  filter: blur(1px);
+}
+
+.filter-perfect {
+  filter: opacity(0.7);
+}
+
+.filter-team {
+  filter: grayscale(1);
+}
+
+.filter-fly {
+  filter: saturate(240%);
+}
+
+.filter-dream {
+  filter: hue-rotate(100deg);
+}
+
+.filter-hard {
+  filter: invert(1) brightness(30%) saturate(60%) hue-rotate(90deg);
 }
 
 @supports ((text-stroke: 1px var(--labelborder-color)) or (-webkit-text-stroke: 1px var(--label-border-color))) {
