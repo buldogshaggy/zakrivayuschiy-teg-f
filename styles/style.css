@@ -315,6 +315,8 @@
 
 .card__icon-button {
   background-color: transparent;
+  display: flex;
+  align-items: center;
   border: 0;
   cursor: pointer;
   padding: 0;
@@ -356,6 +358,12 @@
   transition-delay: 0.03s;
 }
 
+.like-icon .countour {
+  fill: var(--heart-color-countour);
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
 .like-icon:hover .main-body {
   fill: var(--heart-main-body-color);
   transition-delay: 0.05s;
@@ -363,6 +371,7 @@
 
 .like-icon:hover .core {
   fill: var(--heart-main-body-color);
+  transition-delay: 0s;
 }
 
 .like-icon:active .main-body {
@@ -372,10 +381,12 @@
 
 .like-icon:active .core {
   fill: var(--heart-main-animation-color);
+  transition-delay: 0s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-main-animation-color);
+  transition-delay: 0s;
 }
 
 .like-icon.is-liked .main-body {
@@ -386,6 +397,8 @@
 .like-icon.is-liked .countour {
   fill: var(--heart-main-animation-color);
   transition-delay: 0.06s;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
 }
 
 .like-icon.is-liked .heart {
@@ -432,6 +445,7 @@
   padding: 30px;
   flex-direction: column;
   justify-content: space-between;
+  row-gap: 30px;
 }
 
 .dialog-window[open] {
@@ -495,5 +509,14 @@
 
   .image__label {
     right: 13px;
+  }
+
+  .card__image {
+    max-height: 375px;
+  }
+
+  .footer__button {
+    display: flex;
+    flex-direction: column;
   }
 }
